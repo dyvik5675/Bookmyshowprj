@@ -1,0 +1,17 @@
+{
+  "name": "bookmyshow-mern",
+  "version": "1.0.0",
+  "description": "A full-stack BookMyShow-style project using MongoDB, Express, React, and Node.js.",
+  "main": "index.js",
+  "scripts": {
+  "frontend": "cd client && npm run dev",
+  "backend": "cd server && npm run dev",
+  "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
