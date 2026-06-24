@@ -29,11 +29,11 @@ await Promise.all([
   User.deleteMany({})
 ]);
 
-const password = await bcrypt.hash("admin123", 10);
+const password = await bcrypt.hash("admin1234", 10);
 const userPassword = await bcrypt.hash("user123", 10);
 
 await User.create([
-  { name: "Admin", email: "admin@bookmyshow.test", password, role: "admin" },
+  { name: "Admin", email: "admin1@bookmyshow.test", password, role: "admin" },
   { name: "Demo User", email: "user@bookmyshow.test", password: userPassword, role: "user" }
 ]);
 
